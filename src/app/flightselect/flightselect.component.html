@@ -1,0 +1,42 @@
+<p>flightselect works!</p>
+<form #AirlineForm="" (ngSubmit)="Selectflight(AirlineForm)">
+        <table>
+            <tr>
+                <td>Filght ID</td><td> <input type="text" name="fid" ngModel required maxlength="10" > </td>
+            </tr>
+            <tr>
+                <td>Flight Name</td><td> <input type="text" name="fname" ngModel required maxlength="20"> </td>
+            </tr>
+            <tr>
+                <td>Flight From </td><td> <select name="type" ngModel>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Chennai">Chennai</option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td>Flight To</td><td> <select name="type" ngModel>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Pune">Pune</option>
+                </select> </td>
+                <tr>
+                    <td>Flight Class</td><td> <select name="type" ngModel>
+                                <option value="Business">Business</option>
+                                <option value="Economy">Economy</option>
+                    </select> </td>
+                </tr>
+    
+            <tr>
+                <td>Flight Price </td><td> <input type="text" name="Price" ngModel required maxlength="10"> </td>
+            </tr>
+            <tr>
+                <td> <input type="submit" value="SAVE"> </td>
+                
+            </tr>
+        </table>
+</form>
+
